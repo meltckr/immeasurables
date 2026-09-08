@@ -1,0 +1,8 @@
+{
+  "version": "2026-09-08-v3",
+  "duration_seconds": 1200.0,
+  "audio": "four-immeasurables-daily-20260908-daily-v1-v3-refined.mp3",
+  "audio_sha256": "f4b75e826eeb6d1e3d775ecc2c7b751666d0a3603548a517d9654434a6f6c4e0",
+  "transcript_sha256": "af51096cda8dbce0f47aff3ded84c9bba3f6f511333680a30849c4e5b0c74bea",
+  "speech_speed_relative_to_previous": 0.85
+}
