@@ -1,9 +1,22 @@
 # The Four Immeasurables
 
-[Daily audio practice](https://meltckr.github.io/immeasurables/daily-practice/) · [Original morning practice](https://meltckr.github.io/immeasurables/)
+[Interactive Daily Practice](https://meltckr.github.io/immeasurables/) · [Daily audio practice](https://meltckr.github.io/immeasurables/daily-practice/)
 
-The daily audio practice is a complete twenty-minute guided session with refuge, the four immeasurables, quiet contemplation, and a closing dedication. Prayers are plain-English adaptations. The original morning-practice page is preserved and links to the new audio practice.
+The root of this repository now hosts an **Interactive Progressive Web App (PWA)** for the Four Immeasurables daily practice. It is designed to be added to the iOS Home Screen for a smooth, offline-ready daily ritual.
 
-GitHub Pages publishes the root of `main` through the repository's established Pages build. The finished daily practice lives in `daily-practice/`; the player is the approved, unchanged `mel-audio-player` component. Audio uses a unique versioned filename and an exact collapsed transcript, with no autoplay.
+## Features
+- **Morning Card:** Settle, Refuge, radiate the four, Dedicate.
+- **Micro practices & Four Breaths:** Quick grounding sessions for any time of day.
+- **Guided Formal Sit:** Equanimity-first MSB formal cycle.
+- **Time-of-day Theming:** Adapts color palette automatically.
+- **Offline Ready:** Core practice screens work without an internet connection.
 
-The repository contains finished listening assets only. Private reference recordings, reference transcripts, model files, and raw production logs are excluded.
+## Fidelity Note
+The interactive practice strictly honors the **Dharma Vajra Ocean / MSB** daily liturgy. The Four Immeasurables verses are preserved character-for-character from the Daily Prayers text. The formal sit defaults to the Kongtrul sequence (equanimity as the base). There are no invented visualizations, circles, or replacement languages.
+
+---
+
+**Legacy:**
+The daily audio practice is a complete twenty-minute guided session with refuge, the four immeasurables, quiet contemplation, and a closing dedication. It lives in `daily-practice/` and remains fully intact.
+
+GitHub Pages publishes the root of `main` through the repository's established Pages build. The repository contains finished assets only.

@@ -1,7 +1,7 @@
 {
-  "name": "The Four Immeasurables — Morning Practice",
+  "name": "Four Immeasurables Practice",
   "short_name": "Immeasurables",
-  "description": "A complete Four Immeasurables morning practice — settle, take refuge, radiate the four, rest, and dedicate.",
+  "description": "Interactive daily practice for the Four Immeasurables.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
