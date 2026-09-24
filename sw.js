@@ -1,4 +1,4 @@
-const CACHE_NAME = 'immeasurables-v1';
+const CACHE_NAME = 'immeasurables-v2';
 const ASSETS = [
   './',
   './index.html',

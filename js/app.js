@@ -37,11 +37,23 @@ let currentIndex = 0;
 let isFormalEquanimityFirst = true;
 
 document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
   bindHomeEvents();
-  bindSettings();
+  bindPractice();
+  try {
+    initTheme();
+    bindSettings();
+  } catch (err) {
+    console.error(err);
+  }
   registerSW();
 });
+
+function on(id, event, handler) {
+  const el = document.getElementById(id);
+  if (!el) return null;
+  el.addEventListener(event, handler);
+  return el;
+}
 
 function registerSW() {
   if ('serviceWorker' in navigator) {
@@ -49,27 +61,37 @@ function registerSW() {
   }
 }
 
-function initTheme() {
+function applyTheme(name) {
+  document.body.className = `theme-${name}`;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  const colors = { morning: '#fcf8eb', midday: '#ffffff', night: '#121526' };
+  if (meta && colors[name]) meta.setAttribute('content', colors[name]);
+}
+
+function applyAutoTheme() {
   const hour = new Date().getHours();
-  let theme = 'theme-midday';
-  if (hour >= 5 && hour < 11) theme = 'theme-morning';
-  else if (hour >= 17 || hour < 5) theme = 'theme-night';
-  document.body.className = theme;
-  
-  // Theme override listener
-  document.getElementById('theme-select').value = 'auto';
-  document.getElementById('theme-select').addEventListener('change', (e) => {
-    if (e.target.value === 'auto') {
-      initTheme(); // re-eval
-    } else {
-      document.body.className = `theme-${e.target.value}`;
-    }
-  });
-  
-  // Order toggle
-  document.getElementById('order-toggle').addEventListener('change', (e) => {
-    isFormalEquanimityFirst = e.target.checked;
-  });
+  let theme = 'midday';
+  if (hour >= 5 && hour < 11) theme = 'morning';
+  else if (hour >= 17 || hour < 5) theme = 'night';
+  applyTheme(theme);
+}
+
+function initTheme() {
+  applyAutoTheme();
+  const themeSelect = document.getElementById('theme-select');
+  if (themeSelect) {
+    themeSelect.value = 'auto';
+    themeSelect.addEventListener('change', (e) => {
+      if (e.target.value === 'auto') applyAutoTheme();
+      else applyTheme(e.target.value);
+    });
+  }
+  const orderToggle = document.getElementById('order-toggle');
+  if (orderToggle) {
+    orderToggle.addEventListener('change', (e) => {
+      isFormalEquanimityFirst = e.target.checked;
+    });
+  }
 }
 
 function showScreen(id, direction = 'forward') {
@@ -89,20 +111,18 @@ function showScreen(id, direction = 'forward') {
 }
 
 function bindHomeEvents() {
-  document.getElementById('btn-morning').addEventListener('click', () => startMorning());
-  document.getElementById('btn-breaths').addEventListener('click', () => startBreaths());
-  document.getElementById('btn-formal').addEventListener('click', () => startFormal());
-  document.getElementById('btn-micro').addEventListener('click', () => showMicroMenu());
-  
-  // Bind micro buttons
+  on('btn-morning', 'click', () => startMorning());
+  on('btn-breaths', 'click', () => startBreaths());
+  on('btn-formal', 'click', () => startFormal());
+  on('btn-micro', 'click', () => showMicroMenu());
+
   document.querySelectorAll('.micro-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
-      const q = e.target.dataset.quality;
+      const q = e.currentTarget.dataset.quality;
       startMicro(q);
     });
   });
-  
-  // Bind global back buttons
+
   document.querySelectorAll('.btn-back').forEach(btn => {
     btn.addEventListener('click', () => {
       if (currentIndex > 0 && currentSequence.length > 0 && !btn.closest('#screen-micro-menu')) {
@@ -112,19 +132,35 @@ function bindHomeEvents() {
       }
     });
   });
-  
-  // Practice content tap to advance
-  document.getElementById('practice-content').addEventListener('click', () => nextStep());
+}
+
+function bindPractice() {
+  on('practice-content', 'click', () => nextStep());
+  on('btn-continue', 'click', (e) => {
+    e.stopPropagation();
+    nextStep();
+  });
 }
 
 function bindSettings() {
   const overlay = document.getElementById('settings-modal');
-  document.getElementById('btn-settings').addEventListener('click', () => {
-    overlay.classList.add('active');
-  });
-  document.getElementById('btn-close-settings').addEventListener('click', () => {
-    overlay.classList.remove('active');
-  });
+  const openBtn = document.getElementById('btn-settings');
+  const closeBtn = document.getElementById('btn-close-settings');
+  if (openBtn && overlay) {
+    openBtn.addEventListener('click', () => overlay.classList.add('active'));
+  }
+  if (closeBtn && overlay) {
+    closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+  }
+}
+
+function updateAdvanceButton() {
+  const btn = document.getElementById('btn-continue');
+  if (!btn || currentSequence.length === 0) return;
+  const last = currentIndex >= currentSequence.length - 1;
+  const label = last ? "What's Next" : 'Continue';
+  btn.textContent = label;
+  btn.setAttribute('aria-label', label);
 }
 
 function goHome() {
@@ -208,6 +244,7 @@ function startMicro(quality) {
 }
 
 function nextStep() {
+  if (currentSequence.length === 0) return;
   if (currentIndex < currentSequence.length - 1) {
     currentIndex++;
     renderCurrentStep('forward');
@@ -228,6 +265,8 @@ function renderCurrentStep(direction) {
   const container = document.getElementById('practice-content');
   const dotsContainer = document.getElementById('progress-dots');
   const bgLayer = document.querySelector('.bg-layer');
+  if (!step || !container || !dotsContainer || !bgLayer) return;
+  updateAdvanceButton();
   
   // Render dots
   dotsContainer.innerHTML = '';
@@ -246,7 +285,7 @@ function renderCurrentStep(direction) {
       container.innerHTML = `
         <div class="english-label">${step.title}</div>
         <div class="verse-text" style="font-size: 1.6rem">${step.verse.replace(/\n/g, '<br>')}</div>
-        <div class="tibetan-name" style="font-size: 1.1rem; margin-top:20px; opacity: 0.7; font-family: var(--font-sans); font-style: normal;">${step.note}</div>
+        <div class="step-note">${step.note}</div>
       `;
       bgLayer.className = 'bg-layer bg-dust';
     } else {
