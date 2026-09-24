@@ -35,58 +35,58 @@
       </header>
       
       <div class="modes-grid">
-        <div class="mode-card" id="btn-morning">
-          <div class="mode-icon" style="background: var(--color-lk)">☀️</div>
-          <div class="mode-text">
-            <h2>Morning Card</h2>
-            <p>Refuge, Bodhicitta, and the Four Immeasurables once through.</p>
-          </div>
-        </div>
+        <button type="button" class="mode-card" id="btn-morning">
+          <span class="mode-icon" style="background: var(--color-lk)" aria-hidden="true">☀️</span>
+          <span class="mode-text">
+            <span class="mode-title">Morning Card</span>
+            <span class="mode-blurb">Refuge, Bodhicitta, and the Four Immeasurables once through.</span>
+          </span>
+        </button>
         
-        <div class="mode-card" id="btn-breaths">
-          <div class="mode-icon" style="background: var(--color-joy)">💨</div>
-          <div class="mode-text">
-            <h2>Four Breaths</h2>
-            <p>Ultra-light. One breath and phrase per quality.</p>
-          </div>
-        </div>
+        <button type="button" class="mode-card" id="btn-breaths">
+          <span class="mode-icon" style="background: var(--color-joy)" aria-hidden="true">💨</span>
+          <span class="mode-text">
+            <span class="mode-title">Four Breaths</span>
+            <span class="mode-blurb">Ultra-light. One breath and phrase per quality.</span>
+          </span>
+        </button>
         
-        <div class="mode-card" id="btn-formal">
-          <div class="mode-icon" style="background: var(--color-equanimity)">🪷</div>
-          <div class="mode-text">
-            <h2>Guided Formal Sit</h2>
-            <p>Settle, radiate, rest, and dedicate.</p>
-          </div>
-        </div>
+        <button type="button" class="mode-card" id="btn-formal">
+          <span class="mode-icon" style="background: var(--color-equanimity)" aria-hidden="true">🪷</span>
+          <span class="mode-text">
+            <span class="mode-title">Guided Formal Sit</span>
+            <span class="mode-blurb">Settle, radiate, rest, and dedicate.</span>
+          </span>
+        </button>
         
-        <div class="mode-card" id="btn-micro">
-          <div class="mode-icon" style="background: var(--color-compassion)">✨</div>
-          <div class="mode-text">
-            <h2>Single Quality Micro</h2>
-            <p>Pick one of the four for a quick 30–90s landing.</p>
-          </div>
-        </div>
+        <button type="button" class="mode-card" id="btn-micro">
+          <span class="mode-icon" style="background: var(--color-compassion)" aria-hidden="true">✨</span>
+          <span class="mode-text">
+            <span class="mode-title">Single Quality Micro</span>
+            <span class="mode-blurb">Pick one of the four for a quick 30–90s landing.</span>
+          </span>
+        </button>
       </div>
       
       <div class="footer-links">
         <a href="daily-practice/" target="_self">Listen to daily audio practice</a>
         <br><br>
-        <button id="btn-settings" class="settings-btn">Preferences & About</button>
+        <button type="button" id="btn-settings" class="settings-btn">Preferences & About</button>
       </div>
     </div>
     
     <!-- Micro Menu Screen -->
     <div id="screen-micro-menu" class="screen">
       <div class="nav-top">
-        <button class="btn-back">← Back</button>
+        <button type="button" class="btn-back">← Back</button>
       </div>
       <div class="practice-content" style="justify-content: flex-start; padding-top: 40px;">
         <h2 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 30px;">Select Quality</h2>
         <div class="micro-menu">
-          <button class="micro-btn micro-lk" data-quality="lk">Loving-Kindness</button>
-          <button class="micro-btn micro-compassion" data-quality="compassion">Compassion</button>
-          <button class="micro-btn micro-joy" data-quality="joy">Empathetic Joy</button>
-          <button class="micro-btn micro-equanimity" data-quality="equanimity">Equanimity</button>
+          <button type="button" class="micro-btn micro-lk" data-quality="lk">Loving-Kindness</button>
+          <button type="button" class="micro-btn micro-compassion" data-quality="compassion">Compassion</button>
+          <button type="button" class="micro-btn micro-joy" data-quality="joy">Empathetic Joy</button>
+          <button type="button" class="micro-btn micro-equanimity" data-quality="equanimity">Equanimity</button>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@
     <!-- Practice Screen -->
     <div id="screen-practice" class="screen">
       <div class="nav-top">
-        <button class="btn-back">← Back</button>
+        <button type="button" class="btn-back">← Back</button>
         <div class="progress-dots" id="progress-dots"></div>
         <div style="width:50px"></div><!-- Spacer for centering -->
       </div>
@@ -103,7 +103,9 @@
         <!-- Injected via JS -->
       </div>
       
-      <div class="tap-cue">Tap to continue</div>
+      <div class="practice-actions">
+        <button type="button" id="btn-continue" class="btn-continue">Continue</button>
+      </div>
     </div>
   </div>
 
@@ -112,7 +114,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h2 style="font-family: var(--font-serif); font-size: 1.5rem;">Preferences</h2>
-        <button class="close-modal" id="btn-close-settings">&times;</button>
+        <button type="button" class="close-modal" id="btn-close-settings">&times;</button>
       </div>
       <div class="setting-row">
         <span>Formal Sit Order</span>
