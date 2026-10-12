@@ -16,7 +16,11 @@ import Combine
         } catch { self.error = "Progress could not be loaded. Please check local storage before continuing." }
         refresh()
     }
-    func refresh() { let old = state.day; state.reconcile(Date()); if old != state.day { save() } }
+    func refresh() {
+        let now = Date()
+        guard state.day != DawnState.dayKey(now) else { return }
+        state.reconcile(now); save()
+    }
     func save() { do { try JSONEncoder().encode(state).write(to: url, options: .atomic); error = nil } catch { self.error = "Progress could not be saved. Your changes are currently only in memory." } }
     func complete(_ i: Int, day: String) { refresh(); guard day == state.day else { return }; state.complete(i); save() }
     func undo() { refresh(); state.undo(); save() }
@@ -73,6 +77,8 @@ struct DawnView: View {
                                 if valid && hold.release(item: index, day: store.state.day, now: ProcessInfo.processInfo.systemUptime) { store.complete(index, day: store.state.day) }
                                 hold.cancel(); progress = 0; gestureCancelled = false
                             })
+                            .accessibilityElement(children: .ignore)
+                            .accessibilityIdentifier("dawn-seal-\(index)")
                             .accessibilityLabel("Seal \(DawnState.accessibleTitle(index))")
                             .accessibilityValue("\(Int(progress * 100)) percent")
                             .accessibilityHint("Activate to confirm completion without holding")
@@ -93,6 +99,7 @@ struct DawnView: View {
                 }.font(.caption).buttonStyle(.plain).foregroundStyle(.white.opacity(0.7))
             }.padding(32).frame(maxWidth: 650)
         }.foregroundStyle(Color(red: 0.94, green: 0.91, blue: 0.82))
+        #if os(macOS)
         .background {
             Button("Seal with keyboard") {
                 if let index = store.state.next {
@@ -101,10 +108,12 @@ struct DawnView: View {
             }.keyboardShortcut(.return, modifiers: [])
                 .hidden().accessibilityHidden(true)
         }
+        #endif
         .onReceive(timer) { _ in
             let day = store.state.day; store.refresh()
             if day != store.state.day || phase != .active { hold.cancel(); progress = 0 }
-            progress = hold.progress(now: ProcessInfo.processInfo.systemUptime)
+            let nextProgress = hold.progress(now: ProcessInfo.processInfo.systemUptime)
+            if progress != nextProgress { progress = nextProgress }
         }
         .onChange(of: phase) { _, _ in hold.cancel(); progress = 0; store.refresh() }
         .confirmationDialog("Seal this practice?", isPresented: $confirm, titleVisibility: .visible) {

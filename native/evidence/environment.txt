@@ -4,5 +4,9 @@ Xcode 27.1 Release Candidate installed /Applications/Xcode.app; xcodebuild -vers
 Official Apple Developer signed-in route supplied Xcode_27.1_Release_Candidate.xip, 2027369056 bytes.
 Minimum OS from expanded app: 26.6. Gatekeeper assess accepted, source Apple System.
 Mac prototype compiled via CLT macOS 26.5 SDK and ran; 16 model checks passed.
-Xcode SDK and Simulator CLI checks blocked by unaccepted Xcode/Apple SDK license. No license accepted by agent.
+Owner cleared Xcode license. checkFirstLaunchStatus exits 0; runFirstLaunch installation succeeded.
+iOS 27.1 arm64 Simulator runtime 24A94232 installed. Supported device type: iPhone Duo only.
+Isolated QA device: E4649A5E-1A98-4263-A1C5-9508CB969EBA.
+Two Simulator UI tests passed; current macOS Xcode build passed.
+No license accepted by agent.
 No credentials handled; no security settings changed; no provisioning profiles created.

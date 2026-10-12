@@ -1,0 +1,588 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project native/Bedrock.xcodeproj -scheme Bedrock -sdk iphonesimulator -configuration Debug -derivedDataPath /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphonesimulator27.1
+
+2026-10-12 08:51:22.878 xcodebuild[14193:18838970] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+{ platform:macOS, arch:arm64, id:00006032-000428112653801C, name:My Mac }
+{ platform:macOS, arch:x86_64, id:00006032-000428112653801C, name:My Mac }
+{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }
+{ platform:macOS, name:Any Mac }
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'Bedrock' in project 'Bedrock' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: f0ca260a6a1a0b3f8b4eed5fbe8abcd8
+Build description path: /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/XCBuildData/f0ca260a6a1a0b3f8b4eed5fbe8abcd8.xcbuilddata
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/CompilationCache.noindex
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/CompilationCache.noindex
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -o /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/PrecompiledHeaders
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/PrecompiledHeaders
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    builtin-create-build-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock-9b89b3c8db49641ca44b362fbe8fccaf-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock.xcodeproj
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock-9b89b3c8db49641ca44b362fbe8fccaf-VFS-iphonesimulator/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-project-headers.hmap (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-project-headers.hmap
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-own-target-headers.hmap (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.hmap (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.hmap
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/empty-Bedrock.plist (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/empty-Bedrock.plist
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-generated-files.hmap (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-generated-files.hmap
+
+MkDir /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    /bin/mkdir -p /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-non-framework-target-headers.hmap (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-target-headers.hmap (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftConstValuesFileList (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftFileList (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftFileList
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.DependencyStaticMetadataFileList (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.DependencyMetadataFileList (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock_const_extract_protocols.json (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftFileList (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftFileList
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftConstValuesFileList (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-OutputFileMap.json (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock_const_extract_protocols.json (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.LinkFileList (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.LinkFileList
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-OutputFileMap.json (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.LinkFileList (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    write-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.LinkFileList
+
+ProcessInfoPlistFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Info.plist /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/empty-Bedrock.plist (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-infoPlistUtility /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/empty-Bedrock.plist -producttype com.apple.product-type.application -genpkginfo /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Info.plist
+
+SwiftDriver Bedrock normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Bedrock -O @/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -F /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -c -j32 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -sdk-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock_const_extract_protocols.json -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-generated-files.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-own-target-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-target-headers.hmap -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-project-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources-normal/x86_64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources/x86_64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-Swift.h -working-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver Bedrock normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Bedrock -O @/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -F /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -c -j32 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -sdk-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock_const_extract_protocols.json -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-generated-files.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-own-target-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-target-headers.hmap -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-project-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources-normal/arm64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources/arm64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-Swift.h -working-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-5U62T575VML2NLFEG4JO0STHC.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/ptrauth-XMDX3NC32L9W32H34H3P4OP2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_float-3SS1275KEYQRAY1HHQ3VYHYLZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/DeveloperToolsSupport-4CE00GOUDUN7GR6FC96X1QKZI.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stdbool-9RSGNDTZGGLALSXULM2NE00YM.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/SwiftShims-4F3SZWHRW23TFT71M07IDCO1F.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_AvailabilityInternal-CRAEIOBG3WP85Y1HOGNNG8664.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/ptrcheck-49NE6I2RYUSKJQ0NEBQ23UJB.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/ptrcheck-8XHYTXVR10QRWOM8RLAY158ZU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_AvailabilityInternal-DUQU03IHL05EJZMFMYU5TSV3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_float-BV66XYG7HDTRUXQNWQJ1QI1HP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/SwiftShims-6D1NK99FYV55SIY4GN4TJPV59.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stdarg-AZO5HOWY6J089H6JMVLKM1AWC.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stddef-83W2CF1M2UHMQ20HDDOIRK26O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/ptrauth-2G0QZWDQEMUHPB2EDOOO9HXCT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stdarg-2YRCBM321JZK6VL9IZR1WMFVN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stddef-8YPA66ACFMC7H8K07Q7LFPAFD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stdbool-12I4L0NJAHA28Q35MMLF4LWZ1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-C4I4P010SAILWI5CMTJI9ZUAT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/DeveloperToolsSupport-BII2X2HSDCCHPHFBM0DVSZ7JQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_DarwinFoundation1-5SVQJ9IHQIE3S8LALOUBITURV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_DarwinFoundation1-E5WHARODI8JH87JZI34LVIU61.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_limits-762IYM4RYGI2GPPQ24REEEWDS.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_DarwinFoundation2-4JJKP0LQJ6ERLB72NG5GRT3L5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_limits-A2X4OW35GJR1DEZ5P8QJNVM3L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_DarwinFoundation2-F062MPCMCY8CQIH1BDSEH3VFH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_tgmath-CS5HBOH9A3LU70JY3DD1F2JY9.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/string_h-4P1QSIKWULE775FTFDXH4OUOX.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stdint-C7O3LGLL0NSYDMEKIFI5JT11T.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/sys_types-2UNFR9UR87PBN440SB8CN124D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_tgmath-9KBM8X2EQRPLD4OARYQQHWPWW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/sys_types-3CV33UJPZEHX63T5K2K6Q8A2X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/string_h-CDJVBAMTBB6ASA0RNR7RN9Q95.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stdint-3Z5U9F1Q6P7Z7ECOJYI89ZIQ2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_DarwinFoundation3-4OHKDZFN7WWV6F6EB25JCE82V.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stdatomic-CEQT0K2Z4I3UEQUSONRIGRIRX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_DarwinFoundation3-4Z10EDLYTIS1A2PHGXQRH29J5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_intrinsics-7XSAQWP9J4RNEGB9HC67GNM9C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_stdatomic-6VC298XRGFQQ5D0WK44Z8YKE5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_intrinsics-990K9X0XUH3MV37WQIWRUFBAS.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_inttypes-1ZPNHWK3S61DAKL26EL6NAZ20.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_Builtin_inttypes-E2T2HAGVYNUHZ8FP0PJO86SM4.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Darwin-18TXXP1XIMXH1TWBE8S5J5NN1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Darwin-4GB39W12L2X7P6I82D27J9JXR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/simd-2NF7VS4WC1WM2W4KGKJKA5RNT.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/simd-60C8JFF4F1Z6XTJ945RCZCTBZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/MachO-6I1DDIQDN11QR2E75Z0IGQUTO.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/ObjectiveC-2JLUMQJXSAW4UYSX9FVELWNTP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/ObjectiveC-HWGFWYIN9KNG3YP9ATFHWCRW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/MachO-1BRS00WDN8ONQRBO0O86RF2U5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/os_object-7HF3L63P7IU7HQMCFDZ88SM65.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/os_object-6NE2134HSB31EHSQ3MTNG7G7U.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/os_workgroup-DYERFP94M18J93PY4X612QFE0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/os_workgroup-8I6B0NJYN7LYCL957UNEY8S8L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Spatial-BDME6T4N6QSFG7V02JAVR1IW6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Dispatch-392LMO3VBAO2UG0US4GVLT7MR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Dispatch-ID42CLOTO1O23NFNV2XKJW4J.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreFoundation-DVFIHEQF7E5RHN13N68ROMSHI.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/XPC-4NDFD3B90L3D0C91I7X5XCVFT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreFoundation-420VB3LM01IYB0ZV98550662S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/XPC-49K8OTUXT61CT0L1HE0RMALCQ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Spatial-F3T980W31DEBHQTALYW5NV56O.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/os-343BU9IUQOUHMTJSD6KZSLYQP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/os-9YED0WLWQC9942OLZD7S5VLNT.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreAudioTypes-H6DZOUF2THQGS6HV3WF192PV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Security-AZUE3YODIKBRLNRR5KCMS8A56.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CFNetwork-B7W0ILZKBD6B89TEZ3QB2D90N.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreGraphics-7EYIPE5IBG4RVDABN2UVDFP57.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CFNetwork-CA1D2210JWSS4WJAA6DFSQH81.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreAudioTypes-7XP7GX2JFF7ZGFQXOTHZZY1RO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreGraphics-9J5FAYEU5OG4WH37CFIH82JD3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Security-3Z228SUPDQPE7JOKYOOB503IE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreAudio-7YVJXGBSJTFGVX6TTSNWCRX6M.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Foundation-3EB0N4J292HB75RAXQMVRUOUC.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/ImageIO-A5B6S00MF1D5V7BL0ABY0QHR6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreText-1DNFI2LSX3LX74SQL7KAF0388.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreAudio-C89TFDFPRNL5CB0C2HMJIP0EZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Foundation-135P6D00HXDH9HVOBV3E2IALP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreText-3ARJ2VG8X6VJ4HXRVFYRECSX0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/ImageIO-6Y2G9T9DCMGENKP7JHSRAL7MO.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreTransferable-60WXLT6KIVZBWSUQ3M5F01CBX.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/FileProvider-7RDRDPBHQRZASGDWF09C7D44H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/IOSurface-EN1PFT21QJRWCTGFIRHIXCSG2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Symbols-3VS4862BFODO2WMN3JYNNA63I.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/UIUtilities-3R40EOOVVWS8ORMRPHNUNE27B.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/UserNotifications-BEBO5O4T3EBYPEM9IJAX64OBV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/DataDetection-DT1WQ9DB3TKVQBVAUV0D56NPT.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_LocationEssentials-9CSOPNP2Z094214FYT8HZBPIK.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-5U1G3GM3FH8B9NQ550YDDW3EL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/OpenGLES-D9QWTNBFD24OJYD0NSRZ4X0YN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Accessibility-9G7356YWRV7Z3XVBGJTRQR9H6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreData-82OMJPBZK3L7FTVNBNXQGOLVM.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/OSLog-3W4238EGMGI46KG41F58BTI9F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Symbols-EKZIOJ8C4LWB7XCLP6HUFF17B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/DataDetection-5YZR0KAT9BDN8712993I3XUA0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/UIUtilities-5NQ4DDF2NNLFF1MH929J544BX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-1Z901YM1XSA8FGVD4PHJ1WN1K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/UserNotifications-2YSDNT53V62O7ELOF4VECB0V5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreData-AZOHNYBGBK2PD3PBS4UBAEBGK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/_LocationEssentials-2SAZ7QE86NNZ0P5PMMYVMJOHW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreTransferable-6DYVK6Q33US1EC14AEZFXI161.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/IOSurface-56LM7L6KNYU4V820SIGQ7G4YY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Accessibility-59Q122EKS1LJED1QN5LKTAY48.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/FileProvider-CNVM3USP4G2NP68E22XNWI0CU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/OSLog-5DLGLUEURF0YK5XY2DRU37DAL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/OpenGLES-530TN2W87HWNKP0N1OH1UE8E8.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreLocation-DNJ2FF66O2DWCX5JOUIVJAL8H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Metal-39Y8PR5I6JSGPUMQ57Z0PPKKL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreLocation-U6A36AXTK1ZZTEI9KMX8BXNN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/Metal-BFI5NVC7V46C33FME59RC0ALM.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreMotion-DT1VL2GLGFACPX0ZDNEAC1OI3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreMotion-AZFEI9W5GWBGXVSGSTL4509DV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreVideo-2WRNYIEBJ7NXNPT4I6OIXZ1NM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreVideo-A1W3C5T95TKOHNWMR6UTZAWIS.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreMedia-4TKOS3DK5W3681TB96JT31GLK.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/QuartzCore-DWJFVBHPNCMFAETRA4IIK5FAX.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreImage-5SJE42GRWPRG1ZZ9MRUB3LMNJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreMedia-5G9DSBL8UBNKVA4TMCG9D1ZRJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/CoreImage-8AU6PUQP5UJ50ARAX0JLFAT8J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/QuartzCore-6M3VQ636YFBENF336VB0703I8.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/SwiftUICore-4UVPOZSD4KBOVA4E0H0MRM7JR.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/UIKit-2J11G8X83BMIVUZ62HCWMXN3J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/SwiftUICore-4GW4NWGGIH14VFCC0ARNS2SMK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/UIKit-94IHS2MTLI3CSCZRER6IG8QX4.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/SwiftUI-EPN6CAK1L1TLNDZW86SL6PB5I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules/SwiftUI-BQLMZM8X446B650559F8C4POB.pcm
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ Bedrock (in target 'Bedrock' from project 'Bedrock')
+
+SwiftCompile normal x86_64 (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    
+
+SwiftCompile normal x86_64 Compiling\ DawnState.swift /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock/DawnState.swift (in target 'Bedrock' from project 'Bedrock')
+
+SwiftCompile normal x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock/DawnState.swift (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-SwiftPerFileCompile DawnState.swift
+
+SwiftCompile normal x86_64 Compiling\ BedrockApp.swift /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock/BedrockApp.swift (in target 'Bedrock' from project 'Bedrock')
+
+SwiftCompile normal x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock/BedrockApp.swift (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-SwiftPerFileCompile BedrockApp.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Bedrock (in target 'Bedrock' from project 'Bedrock')
+
+SwiftCompile normal arm64 (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    
+
+SwiftCompile normal arm64 Compiling\ BedrockApp.swift /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock/BedrockApp.swift (in target 'Bedrock' from project 'Bedrock')
+
+SwiftCompile normal arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock/BedrockApp.swift (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-SwiftPerFileCompile BedrockApp.swift
+
+SwiftCompile normal arm64 Compiling\ DawnState.swift /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock/DawnState.swift (in target 'Bedrock' from project 'Bedrock')
+
+SwiftCompile normal arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native/Bedrock/DawnState.swift (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-SwiftPerFileCompile DawnState.swift
+
+SwiftDriverJobDiscovery normal x86_64 Emitting module for Bedrock (in target 'Bedrock' from project 'Bedrock')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Bedrock (in target 'Bedrock' from project 'Bedrock')
+
+SwiftDriver\ Compilation\ Requirements Bedrock normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Bedrock -O @/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -F /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -c -j32 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -sdk-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock_const_extract_protocols.json -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-generated-files.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-own-target-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-target-headers.hmap -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-project-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources-normal/arm64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources/arm64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-Swift.h -working-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation\ Requirements Bedrock normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Bedrock -O @/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -F /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -c -j32 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -sdk-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock_const_extract_protocols.json -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-generated-files.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-own-target-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-target-headers.hmap -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-project-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources-normal/x86_64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources/x86_64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-Swift.h -working-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources/Bedrock-Swift.h /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-Swift.h /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-Swift.h (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-swiftHeaderTool -arch arm64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-Swift.h -arch x86_64 /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-Swift.h -o /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources/Bedrock-Swift.h
+
+Copy /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/x86_64-apple-ios-simulator.swiftmodule /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftmodule (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftmodule /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
+
+Copy /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftmodule (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftmodule /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftdoc (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftdoc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.abi.json (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.abi.json /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/x86_64-apple-ios-simulator.abi.json /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.abi.json (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.abi.json /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/x86_64-apple-ios-simulator.abi.json
+
+Copy /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/x86_64-apple-ios-simulator.swiftdoc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftdoc (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftdoc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/x86_64-apple-ios-simulator.swiftdoc
+
+Copy /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftsourceinfo (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftsourceinfo /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftsourceinfo (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftsourceinfo /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal x86_64 Compiling DawnState.swift (in target 'Bedrock' from project 'Bedrock')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DawnState.swift (in target 'Bedrock' from project 'Bedrock')
+
+SwiftDriverJobDiscovery normal x86_64 Compiling BedrockApp.swift (in target 'Bedrock' from project 'Bedrock')
+
+SwiftDriver\ Compilation Bedrock normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Bedrock -O @/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -F /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -c -j32 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -sdk-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock_const_extract_protocols.json -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-generated-files.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-own-target-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-target-headers.hmap -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-project-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources-normal/x86_64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources/x86_64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock-Swift.h -working-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling BedrockApp.swift (in target 'Bedrock' from project 'Bedrock')
+
+SwiftDriver\ Compilation Bedrock normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Bedrock -O @/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -F /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -c -j32 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex -sdk-module-cache-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock_const_extract_protocols.json -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-generated-files.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-own-target-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-all-target-headers.hmap -Xcc -iquote -Xcc /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock-project-headers.hmap -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources-normal/arm64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources/arm64 -Xcc -I/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock-Swift.h -working-directory /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Binary/Bedrock normal x86_64 (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -F/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -filelist /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock_lto.o -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.swiftmodule -o /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Binary/Bedrock
+
+Ld /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Binary/Bedrock normal arm64 (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -F/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator -filelist /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock_lto.o -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.swiftmodule -o /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Binary/Bedrock
+
+CreateUniversalBinary /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Bedrock normal arm64\ x86_64 (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Binary/Bedrock /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Binary/Bedrock -output /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Bedrock
+
+CopySwiftLibs /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Bedrock --scan-folder /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Frameworks --scan-folder /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/PlugIns --scan-folder /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/SystemExtensions --scan-folder /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name Bedrock --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk --xcode-version 27A9275 --platform-family iOS --deployment-target 17.0 --bundle-identifier com.meltucker.bedrock.prototype --output /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app --target-triple arm64-apple-ios17.0-simulator --target-triple x86_64-apple-ios17.0-simulator --binary-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Bedrock --dependency-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock_dependency_info.dat --dependency-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock_dependency_info.dat --stringsdata-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --stringsdata-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftFileList --source-file-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftFileList --metadata-file-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.DependencyMetadataFileList --static-metadata-file-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.DependencyStaticMetadataFileList --swift-const-vals-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/arm64/Bedrock.SwiftConstValuesFileList --swift-const-vals-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Objects-normal/x86_64/Bedrock.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-12 08:51:28.666 appintentsmetadataprocessor[14386:18840295] Starting appintentsmetadataprocessor export
+2026-10-12 08:51:28.671 appintentsmetadataprocessor[14386:18840295] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+GenerateDSYMFile /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app.dSYM /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Bedrock (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    export PATH\=/Applications/Xcode.app/Contents/SharedFrameworks/SwiftBuild.framework/Versions/A/PlugIns/SWBBuildService.bundle/Contents/PlugIns/SWBUniversalPlatformPlugin.bundle/Contents/Frameworks/SWBUniversalPlatform.framework/Resources:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Users/meltucker/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/meltucker/.codex/tmp/arg0/codex-arg0gy5t8q:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/meltucker/bin:/Users/meltucker/.grok/bin:/Users/meltucker/.dotnet:/Users/meltucker/.antigravity-ide/antigravity-ide/bin:/Users/meltucker/.mavis/bin:/Users/meltucker/.antigravity/antigravity/bin:/Users/meltucker/.lmstudio/bin
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Bedrock -o /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app.dSYM
+
+AppIntentsSSUTraining (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Info.plist --temp-dir-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/ssu --bundle-id com.meltucker.bedrock.prototype --product-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app --extracted-metadata-path /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Metadata.appintents --metadata-file-list /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/Bedrock.build/Debug-iphonesimulator/Bedrock.build/Bedrock.DependencyMetadataFileList --source-file /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app/Info.plist --archive-ssu-assets
+2026-10-12 08:51:28.698 appintentsnltrainingprocessor[14388:18840297] Parsing options for appintentsnltrainingprocessor
+2026-10-12 08:51:28.698 appintentsnltrainingprocessor[14388:18840297] Starting AppIntents SSU YAML Generation
+2026-10-12 08:51:28.699 appintentsnltrainingprocessor[14388:18840297] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-RegisterExecutionPolicyException /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app
+
+Validate /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    builtin-validationUtility /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app (in target 'Bedrock' from project 'Bedrock')
+    cd /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-review/native
+    /usr/bin/touch -c /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Products/Debug-iphonesimulator/Bedrock.app
+
+PruneExplicitPrecompiledModules /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-build/SDKExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+

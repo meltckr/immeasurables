@@ -1,0 +1,11 @@
+Final Xcode UI result: TEST SUCCEEDED; 2 tests, 0 failures, 56.684 seconds of tests (60.235 seconds total observer time).
+Result bundle: /Users/meltucker/Documents/Codex/2026-10-11/task/bedrock-ios-qa-final.xcresult
+Runtime: iOS 27.1, 24A94232 arm64; isolated iPhone Duo QA device.
+Real synthesized touch: 0.35-second hold cancelled; 1.9-second hold advanced Four Immeasurables to Heart Sutra.
+Relaunch persisted Heart Sutra. Completion options opened a confirmation; outside-tap cancellation retained Heart Sutra.
+1.9-second holds sealed Heart Sutra and 42 to resting screen. Completed rest survived relaunch.
+Undo restored 42. Confirmed reset restored first card and removed Undo.
+Accessible confirmation test independently sealed first practice and undid it.
+Actual screenshots reviewed. First-card reading text scrolls in the compact viewport; the sealing control remains visible.
+Video is a normal-speed 40-second excerpt of actual primary-display recording. First two PNGs use stable recorded frames; last two are XCTest screenshots.
+Mac practice progress untouched. Physical iPhone proof and spoken VoiceOver testing remain unavailable.

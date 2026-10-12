@@ -1,1 +1,1 @@
-bedrock-review/native/Bedrock.xcodeproj/project.pbxproj: OK
+native/Bedrock.xcodeproj/project.pbxproj: OK
