@@ -1,0 +1,15 @@
+PASS tenth slot unassigned
+PASS partial release cancelled
+PASS full hold accepted
+PASS repeat release rejected
+PASS out of order rejected
+PASS completion idempotent
+PASS restart serialization
+PASS trilogy alone finishes
+PASS accessible undo restores last
+PASS reset returns first
+PASS rollover suggests missed items without completing
+PASS midnight hold rejected
+PASS background cancellation
+PASS local midnight boundary
+14 checks passed

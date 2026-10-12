@@ -1,0 +1,20 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+000000000000000000000001 = { isa = PBXProject; mainGroup = 000000000000000000000002; productRefGroup = 000000000000000000000004; targets = (000000000000000000000006); buildConfigurationList = 000000000000000000000008; compatibilityVersion = "Xcode 14.0"; attributes = { LastUpgradeCheck = 1600; }; };
+000000000000000000000002 = { isa = PBXGroup; children = (000000000000000000000003,000000000000000000000004); sourceTree = "<group>"; };
+000000000000000000000003 = { isa = PBXGroup; path = Bedrock; sourceTree = "<group>"; children = (00000000000000000000000E,00000000000000000000000F); };
+000000000000000000000004 = { isa = PBXGroup; name = Products; sourceTree = "<group>"; children = (000000000000000000000005); };
+000000000000000000000005 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = Bedrock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+00000000000000000000000E = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedrockApp.swift; sourceTree = "<group>"; };
+000000000000000000000010 = { isa = PBXBuildFile; fileRef = 00000000000000000000000E; };
+00000000000000000000000F = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnState.swift; sourceTree = "<group>"; };
+000000000000000000000011 = { isa = PBXBuildFile; fileRef = 00000000000000000000000F; };
+000000000000000000000006 = { isa = PBXNativeTarget; name = Bedrock; productName = Bedrock; productReference = 000000000000000000000005; productType = "com.apple.product-type.application"; buildPhases = (000000000000000000000007); buildConfigurationList = 00000000000000000000000B; dependencies = (); buildRules = (); };
+000000000000000000000007 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000010,000000000000000000000011); runOnlyForDeploymentPostprocessing = 0; };
+000000000000000000000008 = { isa = XCConfigurationList; buildConfigurations = (000000000000000000000009,00000000000000000000000A); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+000000000000000000000009 = { isa = XCBuildConfiguration; name = Debug; buildSettings = { SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; }; };
+00000000000000000000000A = { isa = XCBuildConfiguration; name = Release; buildSettings = { SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; }; };
+00000000000000000000000B = { isa = XCConfigurationList; buildConfigurations = (00000000000000000000000C,00000000000000000000000D); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+00000000000000000000000C = { isa = XCBuildConfiguration; name = Debug; buildSettings = { SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; PRODUCT_BUNDLE_IDENTIFIER = com.meltucker.bedrock.prototype; PRODUCT_NAME = Bedrock; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = Bedrock; INFOPLIST_KEY_UILaunchScreen_Generation = YES; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; SDKROOT = auto; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MACOSX_DEPLOYMENT_TARGET = 14.0; TARGETED_DEVICE_FAMILY = "1,2"; CODE_SIGN_STYLE = Automatic; ENABLE_APP_SANDBOX = YES; }; };
+00000000000000000000000D = { isa = XCBuildConfiguration; name = Release; buildSettings = { SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; PRODUCT_BUNDLE_IDENTIFIER = com.meltucker.bedrock.prototype; PRODUCT_NAME = Bedrock; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = Bedrock; INFOPLIST_KEY_UILaunchScreen_Generation = YES; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx"; SDKROOT = auto; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MACOSX_DEPLOYMENT_TARGET = 14.0; TARGETED_DEVICE_FAMILY = "1,2"; CODE_SIGN_STYLE = Automatic; ENABLE_APP_SANDBOX = YES; }; };
+}; rootObject = 000000000000000000000001; }

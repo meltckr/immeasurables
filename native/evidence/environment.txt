@@ -1,0 +1,6 @@
+Mac Studio arm64. Swift 6.4 installed via Command Line Tools.
+Active developer directory: /Library/Developer/CommandLineTools
+xcodebuild unavailable: requires Xcode; active directory is Command Line Tools.
+No Xcode.app found in /Applications or Spotlight search.
+Mac app compiled successfully against /Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk, arm64 macOS 14 target.
+No existing iOS provisioning-profile directory found; no credentials inspected.

@@ -1,0 +1,11 @@
+Actual native macOS app tested through accessibility UI on October 12, 2026 UTC:
+1. Four Immeasurables: exact owner text visible; accessible completion confirmation cancellation retained card 1.
+2. Confirmed completion advanced to Heart Sutra.
+3. Return keyboard shortcut opened Heart Sutra confirmation; confirmed advanced to 42.
+4. Quit and relaunch resumed 42 from durable local disk state.
+5. Confirming 42 displayed blank resting screen with Dawn complete accessible label, Undo last, and Return / reset.
+6. Undo last restored 42.
+7. Accessible hold-control activation opened confirmation; cancellation retained 42.
+8. Reset Dawn required confirmation; confirmed reset restored Four Immeasurables.
+9. Final rebuilt app launched again at Four Immeasurables, demonstrating reset persisted.
+Screenshots 01–04 captured actual app cards and rest. Physical pointer hold duration and VoiceOver speech not directly exercised.
