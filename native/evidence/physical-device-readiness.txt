@@ -1,0 +1,11 @@
+Read-only inspection — October 12, 2026 UTC
+Physical devices: none listed; only isolated simulated QA devices were available.
+Code-signing identities: security find-identity -v -p codesigning returned 0 valid identities found.
+Standard provisioning directories: neither Library/MobileDevice/Provisioning Profiles nor Library/Developer/Xcode/UserData/Provisioning Profiles was present.
+Xcode preference metadata whitelist: DVTDeveloperAccountManagerAppleIDLists, IDEProvisioningTeams, IDEProvisioningTeamByBundleIdentifier, IDELastSelectedTeamID absent. This alone does not conclusively establish account sign-in state.
+Project build settings: CODE_SIGN_IDENTITY = Apple Development (default setting, not an available certificate); no DEVELOPMENT_TEAM or provisioning-profile override was shown.
+No secret material, passwords, tokens, private keys, or profile contents were read.
+Owner step: connect the physical iPhone and configure usable account/team development signing in Xcode. Signing certificate creation/import, passwords/2FA, agreements, device trust and Developer Mode remain owner-controlled/outside scope.
+Apple Personal Team supports local device testing without paid enrollment; profiles expire after 7 days. No App Store/TestFlight publication needed.
+Source: https://developer.apple.com/help/account/basics/about-your-developer-account
+Stable Simulator route: iOS 27.0 arm64 (24A434), installed; standard iPhone 17 Pro created and same two actual UI tests passed with 0 failures in 54.285 seconds. No source change was required.

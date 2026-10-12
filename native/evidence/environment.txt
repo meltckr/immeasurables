@@ -10,3 +10,6 @@ Isolated QA device: E4649A5E-1A98-4263-A1C5-9508CB969EBA.
 Two Simulator UI tests passed; current macOS Xcode build passed.
 No license accepted by agent.
 No credentials handled; no security settings changed; no provisioning profiles created.
+
+Stable iOS 27.0 arm64 runtime 24A434 installed. Standard iPhone 17 Pro UI suite passed: 2 tests, 0 failures.
+Physical-device readiness inspection: no physical phone connected, 0 valid signing identities, no ready signing/profile route. Owner setup required; no credentials read or created.
