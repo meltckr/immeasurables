@@ -2,9 +2,9 @@
 
 One SwiftUI Xcode project for iOS 17+ and macOS 14+. Working name and bundle display name are configurable in Xcode build settings. Open `Bedrock.xcodeproj`; select Bedrock and a Mac or iPhone Simulator destination. No development team is embedded. Simulator builds require no team. For a physical phone, the owner must install Xcode, select an existing authorized team in Signing & Capabilities, and use an already authorized device. This task did not create credentials, enable Developer Mode, or distribute a release.
 
-The app follows Four Immeasurables → Heart Sutra → **42** → quiet rest. Only those three steps gate Dawn completion. Ten foundation slots exist; slots 4–10 are unassigned. No meaning is assigned to 42.
+The app follows Four Immeasurables → Heart Sutra → **42** → quiet rest. Only those three steps gate Dawn completion. Ten foundation slots exist; slots 4–10 are unassigned. Mel clarified that 42 means a 42-minute meditation session. The short title stays “42,” with that explanation visible and used in completion accessibility labels. There is no timer or inferred guided practice.
 
-Four Immeasurables verses are copied exactly from this repository's `js/app.js` LITURGY, whose README identifies the owner-approved Daily Prayers text. Heart Sutra and 42 are honest title-based cards with no invented prayer text. Original web practice and audio remain unchanged.
+Four Immeasurables verses are copied exactly from this repository's `js/app.js` LITURGY, whose README identifies the owner-approved Daily Prayers text. Mel clarified that Four Immeasurables is his practice and Heart Sutra is him reading the Heart Sutra. The cards say “Your Four Immeasurables practice” and “Read the Heart Sutra”; no reading text or guided instruction is invented. The 42 card identifies the owner-specified 42-minute meditation session. Original web practice and audio remain unchanged.
 
 Hold for 1.6 seconds, then release to complete. Early release, moving more than 30 points, leaving the active app, or crossing a daily boundary cancels. A non-hold button and VoiceOver action open a confirmation; Return invokes the button on Mac. Undo last is always available after completion (Command-Z on Mac). Reset requires confirmation, including from the resting screen. All motion is static except the functional progress indicator; completion needs no animation. Text scrolls to accommodate small screens and large type.
 
@@ -13,7 +13,7 @@ Progress is Codable JSON in the app's local Application Support/Bedrock/dawn.jso
 ## Executed verification — October 12, 2026 UTC
 
 - Compiled native arm64 Mac app using installed CLT Swift and macOS 26.5 SDK; actual app launched on this Mac Studio.
-- 14 model assertions passed: partial/full/repeated release, duplicate/out-of-order completion, serialization/resume, three-only finish, undo, reset, local midnight, rollover suggestions, crossing-midnight hold and background cancellation.
+- 16 model assertions passed (including the owner-clarified practice, reading, and meditation labels): partial/full/repeated release, duplicate/out-of-order completion, serialization/resume, three-only finish, undo, reset, local midnight, rollover suggestions, crossing-midnight hold and background cancellation.
 - Actual Mac accessibility UI: cancellation kept first card; accessible completion traversed all three cards to rest; Return opened Heart Sutra confirmation; quit/relaunch resumed 42; undo from rest restored 42; confirmed reset restored first card.
 - Four screenshots in `evidence/01-four-immeasurables.png` through `04-rest.png` are actual native app captures, not mockups.
 - Xcode project plist syntax validated by `plutil`. Xcode build itself has not run.

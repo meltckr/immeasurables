@@ -5,6 +5,8 @@ var calendar = Calendar(identifier: .gregorian); calendar.timeZone = TimeZone(id
 let today = Date(timeIntervalSince1970: 1791784800)
 var state = DawnState(day: DawnState.dayKey(today, calendar: calendar))
 check(DawnState.slots.count == 10 && DawnState.slots[9].title == nil, "tenth slot unassigned")
+check(DawnState.titles[2] == "42" && DawnState.accessibleTitle(2) == "42-minute meditation session", "owner clarified meditation label preserves short title")
+check(DawnState.descriptions[0] == "Your Four Immeasurables practice" && DawnState.descriptions[1] == "Read the Heart Sutra", "owner clarified practice and reading labels")
 var hold = HoldGate()
 hold.begin(item: 0, day: state.day, now: 10)
 check(!hold.release(item: 0, day: state.day, now: 10.5), "partial release cancelled")

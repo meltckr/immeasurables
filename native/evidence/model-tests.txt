@@ -1,4 +1,6 @@
 PASS tenth slot unassigned
+PASS owner clarified meditation label preserves short title
+PASS owner clarified practice and reading labels
 PASS partial release cancelled
 PASS full hold accepted
 PASS repeat release rejected
@@ -12,4 +14,4 @@ PASS rollover suggests missed items without completing
 PASS midnight hold rejected
 PASS background cancellation
 PASS local midnight boundary
-14 checks passed
+16 checks passed

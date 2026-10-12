@@ -29,7 +29,7 @@ import Combine
 struct DawnView: View {
     @StateObject private var store = DawnStore()
     @Environment(\.scenePhase) private var phase
-        @State private var hold = HoldGate()
+    @State private var hold = HoldGate()
     @State private var progress = 0.0
     @State private var confirm = false
     @State private var resetConfirm = false
@@ -48,7 +48,8 @@ struct DawnView: View {
                     ScrollView {
                         VStack(spacing: 32) {
                             Text(DawnState.titles[index]).font(.system(size: index == 2 ? 92 : 42, weight: .regular, design: .serif)).multilineTextAlignment(.center).accessibilityAddTraits(.isHeader)
-                            Text(index == 0 ? verses : "Use your own practice text.\nThis prototype contains no supplied liturgy for this step.").font(.system(size: 19, design: .serif)).lineSpacing(6).multilineTextAlignment(.center)
+                            Text(DawnState.descriptions[index]).font(.system(size: 19, design: .serif)).multilineTextAlignment(.center)
+                            if index == 0 { Text(verses).font(.system(size: 19, design: .serif)).lineSpacing(6).multilineTextAlignment(.center) }
                             if store.state.easier.contains(index) { Text("A gentle return: begin with one quiet breath. Complete only after your practice.").font(.callout).multilineTextAlignment(.center).foregroundStyle(.white.opacity(0.75)) }
                         }.frame(maxWidth: 470)
                     }
@@ -68,7 +69,7 @@ struct DawnView: View {
                                 if valid && hold.release(item: index, day: store.state.day, now: ProcessInfo.processInfo.systemUptime) { store.complete(index, day: store.state.day) }
                                 hold.cancel(); progress = 0; gestureCancelled = false
                             })
-                            .accessibilityLabel("Complete \(DawnState.titles[index])")
+                            .accessibilityLabel("Complete \(DawnState.accessibleTitle(index))")
                             .accessibilityHint("Activate to confirm completion without holding")
                             .accessibilityAddTraits(.isButton)
                             .accessibilityAction { confirmationDay = store.state.day; confirmationItem = index; confirm = true }
@@ -90,7 +91,7 @@ struct DawnView: View {
         }
         .onChange(of: phase) { _, _ in hold.cancel(); progress = 0; store.refresh() }
         .confirmationDialog("Mark this practice complete?", isPresented: $confirm, titleVisibility: .visible) {
-            Button("Mark \(DawnState.titles[confirmationItem]) complete") { store.complete(confirmationItem, day: confirmationDay) }
+            Button("Mark \(DawnState.accessibleTitle(confirmationItem)) complete") { store.complete(confirmationItem, day: confirmationDay) }
             Button("Cancel", role: .cancel) {}
         }
         .confirmationDialog("Reset today’s Dawn?", isPresented: $resetConfirm, titleVisibility: .visible) {

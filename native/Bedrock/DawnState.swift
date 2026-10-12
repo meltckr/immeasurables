@@ -3,6 +3,9 @@ import Foundation
 struct FoundationSlot: Codable { let id: Int; let title: String? }
 struct DawnState: Codable {
     static let titles = ["Four Immeasurables", "Heart Sutra", "42"]
+    static let descriptions = ["Your Four Immeasurables practice", "Read the Heart Sutra", "42-minute meditation session"]
+    static let meditationDescription = descriptions[2]
+    static func accessibleTitle(_ index: Int) -> String { index == 2 ? meditationDescription : titles[index] }
     static let slots = (1...10).map { FoundationSlot(id: $0, title: $0 <= 3 ? titles[$0 - 1] : nil) }
     var day: String
     var completed: [Int] = []
