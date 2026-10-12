@@ -54,11 +54,15 @@ struct DawnView: View {
                         }.frame(maxWidth: 470)
                     }
                     Spacer(minLength: 12)
-                    Text("Your next quiet step is here when you’re ready.").font(.footnote).foregroundStyle(.white.opacity(0.7))
                     VStack(spacing: 14) {
-                        Text(progress > 0 ? (progress >= 1 ? "Release to complete" : "Keep holding…") : "Hold to complete").frame(maxWidth: .infinity).padding(20)
+                        Text(progress > 0 ? (progress >= 1 ? "Release to seal" : "Keep holding…") : "Hold to seal").frame(maxWidth: .infinity).padding(20)
                             .background(.white.opacity(0.1), in: Capsule())
-                            .overlay(alignment: .bottom) { ProgressView(value: progress).tint(.white).padding(.horizontal, 30).padding(.bottom, 10) }
+                            .background {
+                                GeometryReader { geometry in
+                                    Rectangle().fill(.white.opacity(0.24))
+                                        .frame(width: geometry.size.width * progress)
+                                }.clipShape(Capsule()).accessibilityHidden(true)
+                            }
                             .contentShape(Capsule())
                             .gesture(DragGesture(minimumDistance: 0).onChanged { value in
                                 if abs(value.translation.width) > 30 || abs(value.translation.height) > 30 { gestureCancelled = true; hold.cancel(); progress = 0; return }
@@ -69,11 +73,16 @@ struct DawnView: View {
                                 if valid && hold.release(item: index, day: store.state.day, now: ProcessInfo.processInfo.systemUptime) { store.complete(index, day: store.state.day) }
                                 hold.cancel(); progress = 0; gestureCancelled = false
                             })
-                            .accessibilityLabel("Complete \(DawnState.accessibleTitle(index))")
+                            .accessibilityLabel("Seal \(DawnState.accessibleTitle(index))")
+                            .accessibilityValue("\(Int(progress * 100)) percent")
                             .accessibilityHint("Activate to confirm completion without holding")
                             .accessibilityAddTraits(.isButton)
                             .accessibilityAction { confirmationDay = store.state.day; confirmationItem = index; confirm = true }
-                        Button("Complete without holding") { confirmationDay = store.state.day; confirmationItem = index; confirm = true }.font(.footnote).buttonStyle(.plain).keyboardShortcut(.return, modifiers: [])
+                        Menu("Completion options") {
+                            Button("Seal without holding") { confirmationDay = store.state.day; confirmationItem = index; confirm = true }
+                                .keyboardShortcut(.return, modifiers: [])
+                        }.font(.footnote).menuStyle(.borderlessButton).fixedSize()
+                            .accessibilityHint("Alternative completion without a press-and-hold. Return on keyboard opens confirmation.")
                     }
                 } else { Spacer(); Color.clear.frame(height: 1).accessibilityLabel("Dawn complete. Rest here."); Spacer() }
                 if let error = store.error { Text(error).font(.caption).foregroundStyle(.yellow) }
@@ -84,14 +93,22 @@ struct DawnView: View {
                 }.font(.caption).buttonStyle(.plain).foregroundStyle(.white.opacity(0.7))
             }.padding(32).frame(maxWidth: 650)
         }.foregroundStyle(Color(red: 0.94, green: 0.91, blue: 0.82))
+        .background {
+            Button("Seal with keyboard") {
+                if let index = store.state.next {
+                    confirmationDay = store.state.day; confirmationItem = index; confirm = true
+                }
+            }.keyboardShortcut(.return, modifiers: [])
+                .hidden().accessibilityHidden(true)
+        }
         .onReceive(timer) { _ in
             let day = store.state.day; store.refresh()
             if day != store.state.day || phase != .active { hold.cancel(); progress = 0 }
             progress = hold.progress(now: ProcessInfo.processInfo.systemUptime)
         }
         .onChange(of: phase) { _, _ in hold.cancel(); progress = 0; store.refresh() }
-        .confirmationDialog("Mark this practice complete?", isPresented: $confirm, titleVisibility: .visible) {
-            Button("Mark \(DawnState.accessibleTitle(confirmationItem)) complete") { store.complete(confirmationItem, day: confirmationDay) }
+        .confirmationDialog("Seal this practice?", isPresented: $confirm, titleVisibility: .visible) {
+            Button("Seal \(DawnState.accessibleTitle(confirmationItem))") { store.complete(confirmationItem, day: confirmationDay) }
             Button("Cancel", role: .cancel) {}
         }
         .confirmationDialog("Reset today’s Dawn?", isPresented: $resetConfirm, titleVisibility: .visible) {

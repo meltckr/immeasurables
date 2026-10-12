@@ -9,3 +9,11 @@ Actual native macOS app tested through accessibility UI on October 12, 2026 UTC:
 8. Reset Dawn required confirmation; confirmed reset restored Four Immeasurables.
 9. Final rebuilt app launched again at Four Immeasurables, demonstrating reset persisted.
 Screenshots 01–04 captured actual app cards and rest. Physical pointer hold duration and VoiceOver speech not directly exercised.
+
+Polish verification on current build:
+- Generic nudge and prototype disclaimers absent; owner practice labels remain.
+- Hold control exposes Seal label and 0 percent accessibility value; no slider/progress-indicator element.
+- Completion options menu contains Seal without holding. Opening menu does not seal; selecting action opens confirmation.
+- Return opens Seal this practice? on final build; Escape cancels and retains same card.
+- Confirmed menu action sealed 42 to rest; confirmed reset restored first card; keyboard-confirmed first card advanced to Heart Sutra.
+- Polished actual screenshots replaced 01–04. Timed physical pointer hold remains unverified; model partial/full/repeated hold checks pass.
