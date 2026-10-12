@@ -1,6 +1,8 @@
-Mac Studio arm64. Swift 6.4 installed via Command Line Tools.
-Active developer directory: /Library/Developer/CommandLineTools
-xcodebuild unavailable: requires Xcode; active directory is Command Line Tools.
-No Xcode.app found in /Applications or Spotlight search.
-Mac app compiled successfully against /Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk, arm64 macOS 14 target.
-No existing iOS provisioning-profile directory found; no credentials inspected.
+Mac Studio arm64, macOS 27.0 (26A428).
+System developer directory now resolves /Applications/Xcode.app/Contents/Developer after installation.
+Xcode 27.1 Release Candidate installed /Applications/Xcode.app; xcodebuild -version confirms build 27A9275.
+Official Apple Developer signed-in route supplied Xcode_27.1_Release_Candidate.xip, 2027369056 bytes.
+Minimum OS from expanded app: 26.6. Gatekeeper assess accepted, source Apple System.
+Mac prototype compiled via CLT macOS 26.5 SDK and ran; 16 model checks passed.
+Xcode SDK and Simulator CLI checks blocked by unaccepted Xcode/Apple SDK license. No license accepted by agent.
+No credentials handled; no security settings changed; no provisioning profiles created.
